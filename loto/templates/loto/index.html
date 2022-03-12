@@ -1,0 +1,17 @@
+<h3>
+     Loto 번호 생성기
+</h3>
+
+{% if numbers %}
+    <p>
+        {% for line in numbers %}
+            {{line}}<br/>
+        {% endfor %}
+
+    </p>
+{% endif %}
+<form action="/loto" method="get">
+    <input type="date" name="seed_date" \>
+    <input type="submit" value="refresh" name="refresh_btn" \>
+</form>
+
